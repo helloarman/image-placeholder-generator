@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Placeholder Generator</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.7.1/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip-utils/0.1.0/jszip-utils.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+
+    <style>
+        .placeholder {
+            border: 1px dashed #ccc;
+            display: inline-block;
+            position: relative;
+            margin: 10px;
+        }
+        .ratio-text {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 5px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Image Placeholder Generator</h1>
+    <input type="file" id="imageUpload" multiple accept="image/*">
+    <div id="placeholderContainer"></div>
+    <button id="downloadAll" onclick="downloadPlaceholders()">Download All Placeholders</button>
+    <script src="./scripts.js"></script>
+</body>
+</html>
+
+
